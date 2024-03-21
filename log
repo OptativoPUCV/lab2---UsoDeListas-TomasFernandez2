@@ -1,0 +1,19 @@
+Thu 21 Mar 2024 08:42:44 PM UTC: 
+ exercises.c | 32 ++++++++++++++++++++------------
+ 1 file changed, 20 insertions(+), 12 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:46:15: error: expected declaration specifiers or ‘...’ before ‘malloc’
+   46 |     int *dato(malloc(sizeof(int)));
+      |               ^~~~~~
+exercises.c:47:6: error: ‘dato’ undeclared (first use in this function)
+   47 |     *dato = i + 1;
+      |      ^~~~
+exercises.c:47:6: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:48:5: error: implicit declaration of function ‘push_back’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+   48 |     push_back(L, dato);
+      |     ^~~~~~~~~
+      |     pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+e03bf11
