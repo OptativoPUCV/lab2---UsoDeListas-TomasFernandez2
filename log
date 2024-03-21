@@ -58,3 +58,9 @@ exercises.c:95:12: error: ‘pilaAux’ undeclared (first use in this function);
 exercises.c:95:12: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 74b2686
+Thu 21 Mar 2024 09:08:05 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|3
+total_score: 20/70
+e25cb0e

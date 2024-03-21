@@ -92,13 +92,13 @@ void copia_pila(Stack *P1, Stack *P2)
   int *dato;
   while ((dato = pop(P1)) != NULL)
     {
-      push(pilaAux, dato);
+      push(PilaAux, dato);
       dato = next(P1);
     }
   while ((dato = pop(PilaAux)) != NULL)
     {
       push(P2, dato);
-      dato = next(pilaAux);
+      dato = next(PilaAux);
     }
 }
 
