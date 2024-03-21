@@ -76,15 +76,7 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List *L, int elem) 
 {
-  int *dato = first(L);
-  while (dato != NULL)
-    {
-      if (dato == elem)
-      {
-        popCurrent(L);
-        dato = next(L);
-      }
-    }
+
 }
 
 /*
@@ -94,7 +86,21 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack *P1, Stack *P2) {}
+void copia_pila(Stack *P1, Stack *P2) 
+{
+  Stack *PilaAux = create_stack();
+  int *dato;
+  while ((dato = pop(P1)) != NULL)
+    {
+      push(pilaAux, dato);
+      dato = next(P1);
+    }
+  while ((dato = pop(PilaAux)) != NULL)
+    {
+      push(P2, dato);
+      dato = next(pilaAux);
+    }
+}
 
 /*
 Ejercicio 5.

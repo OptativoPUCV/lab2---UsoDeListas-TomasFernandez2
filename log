@@ -46,3 +46,15 @@ exercises.c:82:16: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 d6dea61
+Thu 21 Mar 2024 09:07:46 PM UTC: 
+ exercises.c | 26 ++++++++++++++++----------
+ 1 file changed, 16 insertions(+), 10 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:95:12: error: ‘pilaAux’ undeclared (first use in this function); did you mean ‘PilaAux’?
+   95 |       push(pilaAux, dato);
+      |            ^~~~~~~
+      |            PilaAux
+exercises.c:95:12: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+74b2686
